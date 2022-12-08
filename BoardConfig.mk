@@ -72,6 +72,9 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_NO_KERNEL := false
 #BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/dtbo/dtbo.mk
 
+# DTB
+BOARD_PREBUILT_DTBIMAGE_DIR := device/redmi/begonia-kernel
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_begonia
 TARGET_RECOVERY_DEVICE_MODULES := libinit_begonia
