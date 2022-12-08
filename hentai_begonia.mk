@@ -16,11 +16,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/redmi/begonia/device.mk)
 
 # Inherit some common SuperiorOS stuff
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/superior/config/common_telephony.mk)
 
-#SuperiorOS Flags
-SUPERIOR_OFFICIAL := true
-SUPERIOR_GAPPS := minimal
+#HentaiOS Flags
+WITH_GAPPS := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
@@ -40,7 +39,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := superior_begonia
+PRODUCT_NAME := hentai_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
