@@ -15,8 +15,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common aosp stuff
+# Inherit some common ProjectElixir stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+#Project-Elixir Stuff
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+CUSTOM_DEVICE := Redmi Note 8 Pro
+Elixir_MAINTAINER := SHADOW(I_AM_ATOMIC)
+TARGET_APERTURE_CAM := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DOESNT_LIKE_FLIPENDO := true
 
@@ -30,6 +37,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
